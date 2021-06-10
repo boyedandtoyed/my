@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+* {
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    color: #333;
+
+}
+
+
+body{
+    max-height: 100vw;
+    min-height: max-content;
+    font-family:'Sirin Stencil', cursive;
+}
+
+main{
+    background:#35ED48;
+    padding:10px;
+    display:grid;
+    width:100%;
+    min-height:max-content;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "leftaside rightaside";
+    justify-content: center;
+}
+
+aside.me{
+    height:max-content;
+    display:grid;
+    background: #91F08F;
+    box-shadow: 1px 1px 15px 0px #000000aa inset;
+    border-radius:20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr;
+    padding: 30px;
+    gap:30px;
+    grid-template-areas: "topimage topindex"
+                         "below    below";
+
+}
+
+.me .topimage{
+    background: url('./binod.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius:50%;
+    opacity: 0.9;
+}
+.me .topindex{
+    box-shadow: 5px 5px 10px 0px #00000059,
+               -5px -5px 10px 0px #FFFFFF59;
+    background: #A2EBDE;
+    text-align:left;
+    border-radius: 10px;
+    padding: 10px;
+}
+.me .topindex h3{
+    text-align:center;
+}
+.me .topindex ol li {
+list-style: none;
+margin-bottom: 10px;
+}
+.me .topindex ol li span{
+    /* font-size: 72px !important; */
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.me .below{
+grid-area:below;
+}
+
+.me .below p{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    text-shadow: 0 0 2px rgba(34, 31, 31, 0.192);
+}
+.me .below p .name{
+font-size: 1.5em;
+text-transform: Uppercase;
+}
+.me .below p .queen{
+    font-size: 1.2em;
+text-transform: Uppercase;
+}
+
+
+
+/* -------------skills---------------- */
+
+aside.skills{
+    display:grid;
+    grid-template-columns:1fr;
+    align-content:start;
+    gap:20px;
+}
+
+/* -------div with meters class which has h3, span
+with class level everthing is going to be passed from       
+the 7javasript just so it is more dynamic  */
+
+.skills .meter {
+    background: #eee;
+    padding:10px;
+    margin: 5px auto;
+    height:70px;
+    width: 90%;
+    /* variable --bgWidth is going to be passed from
+     inside the javascript as well*/
+     cursor:pointer;
+     position: relative;
+}
+.skills .meter span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(90deg, #35ED95 var(--bgWidth),#eee var(--bgWidth), #eee 100%);
+    background-size:  100%;
+    transition: transform 0.4s ease-in;
+       transform: scaleX(0);
+       transform-origin: left;
+       z-index: 1;
+}
+
+.skills .meter h3{
+    position: relative;
+    text-transform: uppercase;
+    font-size:2em;
+    text-align: center;
+    z-index:2;
+    width:max-content;
+    margin: 0 auto;
+    
+}
+
+
+.skills .meter p{
+    text-transform: uppercase;
+    position: relative;
+    font-size:1.5em;
+    text-align: center;
+    color:#333;
+    display: none;
+    z-index:3;
+    width:max-content;
+    margin: 0 auto;
+
+}
+.skills .meter:hover p, .skills:focus p{
+display:block;
+}
+.skills .meter:hover h3, .skills:focus h3{
+    font-size:1em;
+    display:block;
+    }
+    
+.skills .meter:hover span, .skills:focus span{
+       transform: scaleX(1);
+        }
+/* .skills .meter .level{
+color:#35ED48;
+text-transform: uppercase;
+text-align: center;
+line-height:1.5;
+} */
+
+
+@media screen and (max-width:1350px){
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media screen and (max-width:1300px){
+    main{
+        grid-template-columns: 3fr 1fr;
+    }
+    .skills .meter{
+        font-size:0.8em;
+    }
+}
+@media screen and (max-width:1110px){
+    main{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas:"leftaside" "rightaside";
+
+    }
+    aside.skills {
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills .meter{
+        font-size:0.8em;
+    }
+    aside.me{
+        grid-template-columns: 1fr ;
+        grid-template-rows: max-content 1fr;
+        padding: 30px;
+        gap:30px;
+        grid-template-areas: "topimage"
+                             "below"
+                             "topindex";
+    }
+    aside.me .topimage{
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    background-position: 50% 20%;
+    }
+    
+}
+@media screen and (max-width:600px){
+    aside.me .below{
+        font-size: 0.7em;
+    }
+    aside.skills {
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+}
