@@ -172,11 +172,22 @@ line-height:1.5;
 .skills #skilllisttext{
     display:block;
     text-align:center;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: underline;
+    color: rgb(19, 17, 17);
+    padding: 5px;
+    outline: rgba(34, 31, 31, 0.192) solid 2px;
+    outline-offset: -10px;
+}
+
+.skills #skilllisttext h6{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
     color: rgb(235, 126, 126);
+    padding: 5px;
 }
 
 @media screen and (max-width:1350px){
