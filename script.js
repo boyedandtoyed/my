@@ -47,7 +47,7 @@ function returnState(amount){
 var rightaside = document.querySelector('.skills')
 
 function redirect(e){
-redirectTo = e.target.getAttribute('to')
+redirectTo = e.target.getAttribute('href')
 window.location = redirectTo; 
 }
 
@@ -58,9 +58,9 @@ skills.forEach((skill) => {
     div.setAttribute('tabindex',"0");
    
 
-    let meter = document.createElement('span')
+    let meter = document.createElement('a')
     meter.style.setProperty('--bgWidth', skill['amount'] +'%');
-    meter.setAttribute('to',skill['link']);
+    meter.setAttribute('href',skill['link']);
     meter.setAttribute('target',"_blank");
     meter.addEventListener('click',redirect);
     div.appendChild(meter);

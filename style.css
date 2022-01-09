@@ -63,7 +63,7 @@ aside.me{
 list-style: none;
 margin-bottom: 10px;
 }
-.me .topindex ol li span{
+.me .topindex ol li a{
     /* font-size: 72px !important; */
     font-weight: 800;
     letter-spacing: 3px;
@@ -114,7 +114,7 @@ the 7javasript just so it is more dynamic  */
      cursor:pointer;
      position: relative;
 }
-.skills .meter span{
+.skills .meter a{
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +160,7 @@ display:block;
     display:block;
     }
     
-.skills .meter:hover span, .skills:focus span{
+.skills .meter:hover a, .skills:focus a{
        transform: scaleX(1);
         }
 /* .skills .meter .level{
