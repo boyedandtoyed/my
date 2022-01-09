@@ -1,12 +1,12 @@
 const skills = [
-    {name:'PYTHON', amount:75, link:"https://boyedandtoyed.github.io/Medata/"},
-    {name:'PYTHON + DJANGO', amount:55, link:"https://boyedandtoyed.github.io/Medata/"},
-    {name:'DJANGO + REST', amount:25, link:"https://boyedandtoyed.github.io/Medata/"},
-    {name:'CSS AND SASS', amount:70, link:"https://boyedandtoyed.github.io/Medata/"},
+    {name:'PYTHON', amount:75, link:"https://replit.com/@bnodtwari"},
+    {name:'PYTHON + DJANGO', amount:55, link:"http://ideawritings.pythonanywhere.com/home/"},
+    {name:'DJANGO + REST', amount:25, link:"http://weatherapi1.pythonanywhere.com/"},
+    {name:'CSS AND SASS', amount:70, link:"https://github.com/boyedandtoyed"},
     {name:'JAVASCRIPT AND JQUERY', amount:20, link:"https://boyedandtoyed.github.io/Medata/"},
     {name:'SVG and RASTER', amount:40, link:"https://boyedandtoyed.github.io/Medata/"},
     {name:'UI UX', amount:35,link:"https://boyedandtoyed.github.io/Medata/"},
-    {name:'GIT', amount:15, link:"https://boyedandtoyed.github.io/Medata/"},
+    {name:'GIT', amount:15, link:"https://github.com/boyedandtoyed"},
     {name:'LIVING LIFE', amount:1, link:"https://boyedandtoyed.github.io/Medata/"}
 ]
 
