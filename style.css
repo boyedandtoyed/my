@@ -169,7 +169,15 @@ text-transform: uppercase;
 text-align: center;
 line-height:1.5;
 } */
-
+.skills #skilllisttext{
+    display:block;
+    text-align:center;
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(235, 126, 126);
+}
 
 @media screen and (max-width:1350px){
     main{
