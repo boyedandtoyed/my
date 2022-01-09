@@ -46,10 +46,10 @@ function returnState(amount){
 // ----selecting the meter side----
 var rightaside = document.querySelector('.skills')
 
-function redirect(e){
-redirectTo = e.target.getAttribute('href')
-window.location = redirectTo; 
-}
+// function redirect(e){
+// redirectTo = e.target.getAttribute('href')
+// window.location = redirectTo; 
+// }
 
 skills.forEach((skill) => {
     //create div.meter
@@ -62,7 +62,9 @@ skills.forEach((skill) => {
     meter.style.setProperty('--bgWidth', skill['amount'] +'%');
     meter.setAttribute('href',skill['link']);
     meter.setAttribute('target',"_blank");
-    meter.addEventListener('click',redirect);
+    // meter.addEventListener('click',redirect);
+    // commented out because of the redirect function is in no need of it
+    // becasuse I am using a tag instead of span
     div.appendChild(meter);
 
     let h3 = document.createElement('h3');
