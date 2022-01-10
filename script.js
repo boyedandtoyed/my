@@ -6,7 +6,7 @@ const skills = [
     {name:'JAVASCRIPT AND JQUERY', amount:20, link:"https://boyedandtoyed.github.io/Medata/"},
     {name:'SVG and RASTER', amount:40, link:"https://boyedandtoyed.github.io/Medata/"},
     {name:'UI UX', amount:35,link:"https://boyedandtoyed.github.io/Medata/"},
-    {name:'GIT', amount:15, link:"https://github.com/boyedandtoyed"},
+    {name:'GIT', amount:30, link:"https://github.com/boyedandtoyed"},
     {name:'LIVING LIFE', amount:1, link:"https://boyedandtoyed.github.io/Medata/"}
 ]
 
